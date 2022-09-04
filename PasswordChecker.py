@@ -31,7 +31,7 @@ def pwned_api_check(password):
     print(response.text)
     return get_password_leaks_count(response, tail)
 
-
+ # main function to run in terminal by giving a password
 def main(args):
     for password in args:
         count = pwned_api_check(password)
